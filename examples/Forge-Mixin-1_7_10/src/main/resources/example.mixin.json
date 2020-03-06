@@ -1,0 +1,11 @@
+{
+    "required": true,
+    "minVersion": "0.6",
+    "package": "com.example.examplemod.mixin",
+    "refmap": "example.mixin.refmap.json",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": [
+        "MixinSoundManager",
+        "IEntity"
+    ]
+}

@@ -1,0 +1,1 @@
+This is a minimal demonstrating how to get Forge and Mixins work in 1.7.10.
