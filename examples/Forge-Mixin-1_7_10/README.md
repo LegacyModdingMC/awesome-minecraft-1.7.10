@@ -2,7 +2,7 @@
 
 This is a minimal example mod demonstrating how to get Forge and Mixins to work in 1.7.10. Mixin versions below 0.8 work, and 0.8 also works with certain drawbacks.
 
-It does 2 things for demonstration:
+It demonstrates Mixins in 2 ways:
 1. Injects a method into the constructor of `SoundManager`, which prints a message. This demonstrates injectors.
 2. Prints a message every tick the player is in a web, accessing a non-public field of `Entity` in the process. This demonstrates accessors.
 
