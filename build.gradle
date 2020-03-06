@@ -12,7 +12,22 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        // MixinGradle only works with ForgeGradle 2+, so we need to implement it ourselves.
+        // (Comments mark the lines where this is done.)
+        //classpath 'org.spongepowered:mixingradle:0.6-SNAPSHOT'
     }
+}
+
+repositories {
+    maven { // this has to be here and not in buildscript.repositories, otherwise Gradle won't find mixin <0.8 for some reason
+        name = 'sponge'
+        url = 'https://repo.spongepowered.org/maven/'
+    }
+}
+
+configurations {
+    embed
+    compile.extendsFrom(embed)
 }
 
 apply plugin: 'forge'
@@ -23,24 +38,58 @@ archivesBaseName = "modid"
 
 minecraft {
     version = "1.7.10-10.13.4.1614-1.7.10"
-    runDir = "eclipse"
+    runDir = "run"
 }
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 dependencies {
-    // you may put jars on which you depend on in ./libs
-    // or you may define them like so..
-    //compile "some.group:artifact:version:classifier"
-    //compile "some.group:artifact:version"
-      
-    // real examples
-    //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
-    //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
-
-    // for more info...
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
-
+    embed 'org.spongepowered:mixin:0.7+'
+    
+    /* Mixin 0.8 breaks with 1.7.10, but can be made to work by embedding these. However,
+	   doing so overrides the libraries provided by Forge, which will likely result in other mods breaking. */ 
+    //embed 'org.ow2.asm:asm-all:5.2'
+    //embed 'com.google.guava:guava:21.0'
 }
+
+def outRefMapFile = tasks.compileJava.temporaryDir.toString() + "/example.mixin.refmap.json" // 1.7.10 mixin compatibility
+
+jar {
+    manifest {
+        attributes (
+            'MixinConfigs': 'example.mixin.json',
+            'TweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
+            'TweakOrder': 0,
+            
+            // If these two are not set, Forge will not detect the mod, it will only run the mixins
+            'FMLCorePluginContainsFMLMod': 'true',
+            'ForceLoadAsMod': 'true'
+        )
+    }
+
+    from(sourceSets.main.output);
+    
+    from outRefMapFile; // 1.7.10 mixin compatibility
+
+    // embed libraries in jar
+    from configurations.embed.collect {
+        exclude '**/LICENSE.txt'
+        it.isDirectory() ? it : zipTree(it)
+    }
+}
+
+// 1.7.10 mixin compatibility
+def outSrgFile = tasks.compileJava.temporaryDir.toString() + "/outSrg.srg"
+
+afterEvaluate {
+    tasks.compileJava.options.compilerArgs += ["-AreobfSrgFile=${tasks.reobf.srg}", "-AoutSrgFile=${outSrgFile}", "-AoutRefMapFile=${outRefMapFile}"];
+}
+
+reobf {
+    addExtraSrgFile outSrgFile
+}
+// end of mixin stuff
 
 processResources
 {
