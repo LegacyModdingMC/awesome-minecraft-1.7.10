@@ -1,3 +1,5 @@
+**NOTE: this project has been replaced by https://github.com/makamys/forge-mod-template**
+
 # Forge Mixin 1.7.10 example
 
 This is a minimal example mod demonstrating how to get Forge and Mixins to work in 1.7.10. Mixin versions below 0.8 work, and 0.8 also works with certain drawbacks.
