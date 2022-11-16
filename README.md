@@ -1,4 +1,4 @@
-# Awesome 1.7.10
+# Awesome Minecraft 1.7.10
 
 A curated list of awesome Minecraft 1.7.10 modding resources.
 
