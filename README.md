@@ -2,11 +2,6 @@
 
 A curated list of awesome Minecraft 1.7.10 modding resources.
 
-## Miscellaneous
-
-* [1.7.10 Security Vulnerabilities](https://gist.github.com/makamys/3cc10a6c552b6b3d52e09da256ac8f7b) - List of known security vulnerabilities affecting 1.7.10, and ways to mitigate them.
-* https://howoldisminecraft1710.today/ - Interpret as necessary.
-
 ## Mods
 
 ### Mod repositories
@@ -45,3 +40,9 @@ A curated list of awesome Minecraft 1.7.10 modding resources.
 ### Tools
 * [zip_search.py](https://gist.github.com/makamys/f279b286c8afe1b976ea18886df1cf7d) - Can be used to search all mod jars in your mod directory for strings.
 * [generate_mod_launch_args.py](https://gist.github.com/makamys/e8668436ed1780c0623c26936d0e472d) - Generates JVM and program arguments needed to launch a mod in an IDE directly, given a jar of it.
+
+
+## Miscellaneous
+
+* [1.7.10 Security Vulnerabilities](https://gist.github.com/makamys/3cc10a6c552b6b3d52e09da256ac8f7b) - List of known security vulnerabilities affecting 1.7.10, and ways to mitigate them.
+* https://howoldisminecraft1710.today/ - Interpret as necessary.
