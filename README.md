@@ -6,16 +6,16 @@ A curated list of awesome Minecraft 1.7.10 modding resources.
 
 ### Mod repositories
 
-* [CurseForge](https://curseforge.com/)
+* [CurseForge](https://curseforge.com/) - Currently the biggest mod repository.
     * [mcmodbrowser](https://mcmodbrowser.github.io/) - CurseForge frontend that lets you filter by version properly.
     * [cf-search](https://superstormer.github.io/cf-search) - Another CurseForge frontend.
-* [Modrinth](https://modrinth.com/)
+* [Modrinth](https://modrinth.com/) - Relatively new "alternative" mod repository.
 
 #### Obscure section
 
-* [Minecraft Forums](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods) - Not much is left here.
-* [Minecraft Japan Forum](https://forum.civa.jp/viewforum.php?f=3)
-    * [Minecraft Unofficial Japan Users Forum](https://web.archive.org/web/20190715113857/https://forum.minecraftuser.jp/viewforum.php?f=13) - Archive
+* [Minecraft Forums](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods) - Used to be the main place to post mods before CurseForge's arrival. Not much is left here today.
+* [Minecraft Japan Forum](https://forum.civa.jp/viewforum.php?f=3) - The new Japanese forum.
+    * [Minecraft Unofficial Japan Users Forum](https://web.archive.org/web/20190715113857/https://forum.minecraftuser.jp/viewforum.php?f=13) - The old Japanese forum  (Archive)
 * [The Minecraft Archive Project](https://map.crummy.com/) - Big archive of stuff
 
 ### Mod lists
