@@ -12,8 +12,8 @@ A curated list of awesome Minecraft 1.7.10 modding resources.
 ### Mod repositories
 
 * [CurseForge](https://curseforge.com/)
-    * [cf-search](https://superstormer.github.io/cf-search) - Alternate interface for CurseForge
-    * [mcmodbrowser](https://mcmodbrowser.neocities.org/) - Currently dead but still useful for older mods. Lets you filter by version properly.
+    * [mcmodbrowser](https://mcmodbrowser.github.io/) - CurseForge frontend that lets you filter by version properly.
+    * [cf-search](https://superstormer.github.io/cf-search) - Another CurseForge frontend.
 * [Modrinth](https://modrinth.com/)
 
 #### Obscure section
