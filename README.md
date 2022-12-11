@@ -32,15 +32,9 @@ A curated list of awesome Minecraft 1.7.10 modding resources.
 
 ### Resources
 
+* [https://legacymoddingmc.github.io/wiki/](https://legacymoddingmc.github.io/wiki/) - Wiki that aims to centralize documentation efforts.
 * https://gtnh.miraheze.org/wiki/Development - GTNH's wiki page about mod development. The largest collection of resources about mod development currently known.
 * https://mcdrama.net/articles/modding.html - Another list of development resources
-* [How to compile a 1.7.10 Forge mod in CURRENT_YEAR](https://gist.github.com/makamys/27bfbcb3fe6ec4a35f1e809476e651d7) - Guide about troubleshooting the pitfalls you can encounter building old mods.
-* https://makamys.github.io/MCJavadoc/ - Alternative Forge javadoc with a few extra notes
-
-### Tools
-* [zip_search.py](https://gist.github.com/makamys/f279b286c8afe1b976ea18886df1cf7d) - Can be used to search all mod jars in your mod directory for strings.
-* [generate_mod_launch_args.py](https://gist.github.com/makamys/e8668436ed1780c0623c26936d0e472d) - Generates JVM and program arguments needed to launch a mod in an IDE directly, given a jar of it.
-
 
 ## Miscellaneous
 
