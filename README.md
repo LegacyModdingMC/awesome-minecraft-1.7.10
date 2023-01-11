@@ -32,11 +32,11 @@ A curated list of awesome Minecraft 1.7.10 modding resources.
 
 ### Resources
 
-* [https://legacymoddingmc.github.io/wiki/](https://legacymoddingmc.github.io/wiki/) - Wiki that aims to centralize documentation efforts.
-* https://gtnh.miraheze.org/wiki/Development - GTNH's wiki page about mod development. The largest collection of resources about mod development currently known.
-* https://mcdrama.net/articles/modding.html - Another list of development resources
+* [Legacy Modding Wiki](https://legacymoddingmc.github.io/wiki/) - Wiki that aims to centralize documentation efforts.
+* [Development - GTNH wiki](https://gtnh.miraheze.org/wiki/Development) - GTNH's wiki page about mod development. The largest collection of resources about mod development currently known.
+* [(Necro)modding - mcdrama](https://mcdrama.net/articles/modding.html) - Another list of development resources
 
 ## Miscellaneous
 
 * [1.7.10 Security Vulnerabilities](https://gist.github.com/makamys/3cc10a6c552b6b3d52e09da256ac8f7b) - List of known security vulnerabilities affecting 1.7.10, and ways to mitigate them.
-* https://howoldisminecraft1710.today/ - Interpret as necessary.
+* [howoldisminecraft1710.today](https://howoldisminecraft1710.today/) - Interpret as necessary.
